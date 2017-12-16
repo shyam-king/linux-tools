@@ -1,0 +1,53 @@
+HELP FOR snip COMMAND
+---------------------
+
+Author: M Shyam
+Contact: m.shyam.tnj@gmail.com
+
+NOTES:
+------
+
+Programming language used: C++
+Source code: available for free
+Free to distribute or edit
+
+USAGE OF snip COMMAND:
+----------------------
+
+SYNTAX:
+	snip sourcefile destfile [flags]
+
+sourcefile:
+	the file on which the snipping is to be done.
+
+destfile:
+	the file on which the output must be stored. THIS SHOULD BE
+	A DIFFERENT FILE FROM sourcefile.
+
+flags:
+	-r :
+		The character [replacechar] which needs to be snipped out. The default 
+		value is "\n" (newline character).
+	-R :
+		The character [replacetochar] to which the snipped character must be 
+		replaced.
+		Default is 0 [null] - i.e no replacement, only deltion. 
+
+	-m :
+		The maximum number [maxrepititions] of times the [replacechar] is 
+		allowed to repeat before deleting. The default value is 0.
+
+	-f :
+		front snipping. Snip all [replacechar] characters appearing in the 
+		beggining of the source file independant of the value of [maxrepitions].
+		This is flag is not set by default - i.e. there is no front snipping 
+		by default.
+
+	-F :
+		disable front snipping.
+
+AUTHOR'S NOTES:
+--------------
+
+Thank you for using this program. Please provide your feedback to:
+	m.shyam.tnj@gmail.com
